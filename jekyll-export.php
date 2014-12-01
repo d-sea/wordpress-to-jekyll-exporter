@@ -101,6 +101,7 @@ class Jekyll_Export {
 
     $output = array(
       'title'   => get_the_title( $post ),
+      'date'   => get_the_time( 'r', $post ),
       'author'  => get_userdata( $post->post_author )->display_name,
       'excerpt' => $post->post_excerpt,
       'layout'  => get_post_type( $post ),
